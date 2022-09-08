@@ -1,220 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./admission.css" />
     <title>HTML Form</title>
-</head>
-<body>
-    <form action="#" method="post">
-        <table>
-            <tr>
-                <td>Admission Group</td>
-                <td>
-                    <select name="group" id="">
-                        <option value="" selected>Group</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Student's Name (According To S.S.C Certificate)</td>
-                <td>
-                    <input type="text" name="sname" id="sname" placeholder="YOUR NAME">
-                </td>
-            </tr>
-            <tr>
-                <td>Fathers's Name (According To S.S.C Certificate)</td>
-                <td>
-                    <input type="text" name="sname" id="sname" placeholder="YOUR FATHERS NAME">
-                </td>
-            </tr>
-            <tr>
-                <td>Mothers's Name (According To S.S.C Certificate)</td>
-                <td>
-                    <input type="text" name="sname" id="sname" placeholder="YOUR MOTHERS NAME">
-                </td>
-            </tr>
-            <tr>
-                <td>Enter New Password</td>
-                <td>
-                    <input type="password" name="pass1" id="" placeholder="TYPE YOUR PASSWORD">
-                </td>
-            </tr>
-            <tr>
-                <td>Date of Birth  (According To S.S.C Certificate)</td>
-                <td>
-                    <input type="date" name="dob" id="">
-                </td>
-            </tr>
-            <tr>
-                <td>Mobile Number</td>
-                <td>
-                    <input type="tel" id="" name="phone" placeholder="8801671391003" pattern="[0-9]{3}[0-9]{4}[0-9]{6}" required/>
-                </td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>
-                    <input type="email" name="email" id="">
-                </td>
-            </tr>
-            <tr>
-                <td>Present Address</td>
-                <td>
-                    <textarea name="present-address" id="" cols="20" rows="2"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>Permanent Address</td>
-                <td>
-                    <textarea name="permanent-address" id="" cols="20" rows="2"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td>
-                    <input type="radio" name="gender" id="Male" value="M">
-                    <label for="Male">Male</label>
-                    <input type="radio" name="gender" id="Female" value="F">
-                    <label for="Female">Female</label>
-                </td>
-            </tr>
-            <tr>
-                <td>Bank Transaction ID</td>
-                <td>
-                    <input type="text" name="transactionId" id="" placeholder="Transaction Number">
-                </td>
-            </tr>
-            <tr>
-                <td>Amount</td>
-                <td>
-                    <input type="number" name="fee" id="" placeholder="Admission Fee">
-                </td>
-            </tr>
-            <tr>
-                <td>Bkash Sender Mobile</td>
-                <td>
-                    <input type="tel" id="" name="bkash" placeholder="8801671391003" pattern="[0-9]{3}[0-9]{4}[0-9]{6}" required/>
-                </td>
-            </tr>
-            <tr>
-                <td>Upload Your Full Face Photo</td>
-                <td>
-                    <input type="file" name="photo" id="">
-                    <span style="color:red; font-weight: bolder;">Photo Name As Your NID Number</span>
-                </td>
-            </tr>
-        </table>
+  </head>
+  <body>
+    <section class="notification-section bg-info">
+      <p class="text-center lh-1">
+        All Information should be written clearly and correctly.
+      </p>
+      <p class="text-center lh-1">
+        You will require a passport size colored photographs to be uploaded.
+      </p>
+      <p class="text-center lh-1">
+        This information provided in this form will be used in all school
+        documents. Hence, you are requested to provide correct information.
+      </p>
+      <p class="text-center lh-1">
+        The school authority will not bear any responsibility for any wrong
+        information provided.
+      </p>
+      <p class="text-center lh-1 text-danger">
+        <b>For any query please feel free to contact</b>
+        <strong>+8801717127758</strong>.
+      </p>
+    </section>
 
-        <table style="border: 2px solid black;">
+    <section class="form-section">
+      <form action="#" method="post">
+        <div class="payment-info align-center">
+          <table>
             <tr>
-                <td>
-                    <table cellspacing="5"  style="border: 1px solid black;">
-                        <tr>
-                            <th>Name Of The Degree</th>
-                            <th>Board/ University</th>
-                            <th>Group/ Subject</th>
-                            <th>Passing year</th>
-                            <th>Result</th>
-                            <th>Duration</th>
-                        </tr>
-                        <tr>
-                            <td>S.S.C/Equivalent</td>
-                            <td>
-                                <input type="text" name="boardUniversity" id="">
-                            </td>
-                            <td>
-                                <input type="text" name="groupSubject" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="passing" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="result" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="duration" id="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>H.S.C/Equivalent</td>
-                            <td>
-                                <input type="text" name="boardUniversity" id="">
-                            </td>
-                            <td>
-                                <input type="text" name="groupSubject" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="passing" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="result" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="duration" id="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>B.S.C/B.A/Equivalent</td>
-                            <td>
-                                <input type="text" name="boardUniversity" id="">
-                            </td>
-                            <td>
-                                <input type="text" name="groupSubject" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="passing" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="result" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="duration" id="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>M.S.C/M.A/Equivalent</td>
-                            <td>
-                                <input type="text" name="boardUniversity" id="">
-                            </td>
-                            <td>
-                                <input type="text" name="groupSubject" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="passing" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="result" id="">
-                            </td>
-                            <td>
-                                <input type="number" name="duration" id="">
-                            </td>
-                        </tr>
-                        <tr id="info" >
-                            <td colspan="6" style="border: 1px solid black;">
-                                <ul>
-                                    <li>The applicant's application fees is <b>1000/=</b> (One Thousand Taka Only)</li>
-                                    <li>Please send <b>1020/=</b> via bKash in number <strong>+8801717127758</strong> and use applicant's Name as a reference in BKash <b>(Use Send Money Option)</b>.</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        </table>
-                </td>
+              <td>Admission Group</td>
+              <td>
+                <select name="group" id="">
+                  <option value="" selected>Group</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                </select>
+              </td>
             </tr>
-        </table>
+            <tr>
+              <td>Student's Name (According To S.S.C Certificate)</td>
+              <td>
+                <input
+                  type="text"
+                  name="sname"
+                  id="sname"
+                  placeholder="YOUR NAME"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Fathers's Name (According To S.S.C Certificate)</td>
+              <td>
+                <input
+                  type="text"
+                  name="sname"
+                  id="sname"
+                  placeholder="YOUR FATHERS NAME"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Mothers's Name (According To S.S.C Certificate)</td>
+              <td>
+                <input
+                  type="text"
+                  name="sname"
+                  id="sname"
+                  placeholder="YOUR MOTHERS NAME"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Enter New Password</td>
+              <td>
+                <input
+                  type="password"
+                  name="pass1"
+                  id=""
+                  placeholder="TYPE YOUR PASSWORD"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Date of Birth (According To S.S.C Certificate)</td>
+              <td>
+                <input type="date" name="dob" id="" />
+              </td>
+            </tr>
+            <tr>
+              <td>Mobile Number</td>
+              <td>
+                <input
+                  type="tel"
+                  id=""
+                  name="phone"
+                  placeholder="8801671391003"
+                  pattern="[0-9]{3}[0-9]{4}[0-9]{6}"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>
+                <input type="email" name="email" id="" />
+              </td>
+            </tr>
+            <tr>
+              <td>Present Address</td>
+              <td>
+                <textarea
+                  name="present-address"
+                  id=""
+                  cols="20"
+                  rows="2"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Permanent Address</td>
+              <td>
+                <textarea
+                  name="permanent-address"
+                  id=""
+                  cols="20"
+                  rows="2"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>
+                <input type="radio" name="gender" id="Male" value="M" />
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Female" value="F" />
+                <label for="Female">Female</label>
+              </td>
+            </tr>
+            <tr>
+              <td>Bank Transaction ID</td>
+              <td>
+                <input
+                  type="text"
+                  name="transactionId"
+                  id=""
+                  placeholder="Transaction Number"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Amount</td>
+              <td>
+                <input
+                  type="number"
+                  name="fee"
+                  id=""
+                  placeholder="Admission Fee"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Bkash Sender Mobile</td>
+              <td>
+                <input
+                  type="tel"
+                  id=""
+                  name="bkash"
+                  placeholder="8801671391003"
+                  pattern="[0-9]{3}[0-9]{4}[0-9]{6}"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Upload Your Full Face Photo</td>
+              <td>
+                <input type="file" name="photo" id="" />
+                <span style="color: red; font-weight: bolder"
+                  >Photo Name As Your NID Number</span
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
 
-        <table>
+        <div class="education-info">
+          <table style="border: 2px solid black">
             <tr>
-                <td>
-                    <input type="Submit" name="save" value="Submit"/>&nbsp;&nbsp;&nbsp;
-                    <input type="reset" value="Reset"/>
-                </td>
+              <td>
+                <table cellspacing="5" style="border: 1px solid black">
+                  <tr>
+                    <th>Name Of The Degree</th>
+                    <th>Board/ University</th>
+                    <th>Group/ Subject</th>
+                    <th>Passing year</th>
+                    <th>Result</th>
+                    <th>Duration</th>
+                  </tr>
+                  <tr>
+                    <td>S.S.C/Equivalent</td>
+                    <td>
+                      <input type="text" name="boardUniversity" id="" />
+                    </td>
+                    <td>
+                      <input type="text" name="groupSubject" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="passing" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="result" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="duration" id="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>H.S.C/Equivalent</td>
+                    <td>
+                      <input type="text" name="boardUniversity" id="" />
+                    </td>
+                    <td>
+                      <input type="text" name="groupSubject" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="passing" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="result" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="duration" id="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>B.S.C/B.A/Equivalent</td>
+                    <td>
+                      <input type="text" name="boardUniversity" id="" />
+                    </td>
+                    <td>
+                      <input type="text" name="groupSubject" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="passing" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="result" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="duration" id="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>M.S.C/M.A/Equivalent</td>
+                    <td>
+                      <input type="text" name="boardUniversity" id="" />
+                    </td>
+                    <td>
+                      <input type="text" name="groupSubject" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="passing" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="result" id="" />
+                    </td>
+                    <td>
+                      <input type="number" name="duration" id="" />
+                    </td>
+                  </tr>
+                  <tr id="info">
+                    <td colspan="6" style="border: 1px solid black">
+                      <ul>
+                        <li>
+                          The applicant's application fees is <b>1000/=</b> (One
+                          Thousand Taka Only)
+                        </li>
+                        <li>
+                          Please send <b>1020/=</b> via bKash in number
+                          <strong>+8801717127758</strong> and use applicant's
+                          Name as a reference in BKash
+                          <b>(Use Send Money Option)</b>.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </td>
             </tr>
-        </table>
-    </form>
-</body>
+          </table>
+        </div>
+
+        <div class="form-submit">
+          <table>
+            <tr>
+              <td>
+                <input
+                  type="Submit"
+                  name="save"
+                  value="Submit"
+                />&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Reset" />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </section>
+  </body>
 </html>
