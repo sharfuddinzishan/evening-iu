@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
 }
-.notification-section{
-    padding: 10px 5px;
-}
 .bg-info{
     background-color: #76b5c5;
+}
+.bg-warning{
+    background-color: #cce794;
 }
 .text-center{
     text-align: center;
@@ -17,10 +17,25 @@
 .text-danger{
     color: red;
 }
+ .padding-all{
+    padding: 20px 30px;
+ }
 .align-center{
 display: flex;
 justify-content: center;
 }
-.form-section{
-
+.padding-right{
+    padding-right: 2em;
+}
+.table-border {
+    border: 2px solid black;
+}
+.payment-info input[type=text]{
+    width: 60%;
+}
+.w-100{
+    width: 100%;
+}
+.btn{
+    padding: 5px 10px;
 }

@@ -8,7 +8,7 @@
     <title>HTML Form</title>
   </head>
   <body>
-    <section class="notification-section bg-info">
+    <section class="notification-section bg-info padding-all">
       <p class="text-center lh-1">
         All Information should be written clearly and correctly.
       </p>
@@ -29,14 +29,14 @@
       </p>
     </section>
 
-    <section class="form-section">
+    <section class="form-section padding-all">
       <form action="#" method="post">
         <div class="payment-info align-center">
-          <table>
+          <table cellspacing="8">
             <tr>
-              <td>Admission Group</td>
+              <td class="padding-right">Admission Group</td>
               <td>
-                <select name="group" id="">
+                <select name="group" id="" required>
                   <option value="" selected>Group</option>
                   <option value="A">A</option>
                   <option value="B">B</option>
@@ -45,58 +45,67 @@
               </td>
             </tr>
             <tr>
-              <td>Student's Name (According To S.S.C Certificate)</td>
+              <td class="padding-right">
+                Student's Name (According To S.S.C Certificate)
+              </td>
               <td>
                 <input
                   type="text"
                   name="sname"
                   id="sname"
                   placeholder="YOUR NAME"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Fathers's Name (According To S.S.C Certificate)</td>
-              <td>
-                <input
-                  type="text"
-                  name="sname"
-                  id="sname"
-                  placeholder="YOUR FATHERS NAME"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Mothers's Name (According To S.S.C Certificate)</td>
-              <td>
-                <input
-                  type="text"
-                  name="sname"
-                  id="sname"
-                  placeholder="YOUR MOTHERS NAME"
                   required
                 />
               </td>
             </tr>
             <tr>
-              <td>Enter New Password</td>
+              <td class="padding-right">
+                Fathers's Name (According To S.S.C Certificate)
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="YOUR FATHERS NAME"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padding-right">
+                Mothers's Name (According To S.S.C Certificate)
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="mname"
+                  id="mname"
+                  placeholder="YOUR MOTHERS NAME"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padding-right">Enter New Password</td>
               <td>
                 <input
                   type="password"
                   name="pass1"
                   id=""
                   placeholder="TYPE YOUR PASSWORD"
+                  required
                 />
               </td>
             </tr>
             <tr>
-              <td>Date of Birth (According To S.S.C Certificate)</td>
+              <td class="padding-right">
+                Date of Birth (According To S.S.C Certificate)
+              </td>
               <td>
                 <input type="date" name="dob" id="" />
               </td>
             </tr>
             <tr>
-              <td>Mobile Number</td>
+              <td class="padding-right">Mobile Number</td>
               <td>
                 <input
                   type="tel"
@@ -109,13 +118,13 @@
               </td>
             </tr>
             <tr>
-              <td>Email</td>
+              <td class="padding-right">Email</td>
               <td>
                 <input type="email" name="email" id="" />
               </td>
             </tr>
             <tr>
-              <td>Present Address</td>
+              <td class="padding-right">Present Address</td>
               <td>
                 <textarea
                   name="present-address"
@@ -126,7 +135,7 @@
               </td>
             </tr>
             <tr>
-              <td>Permanent Address</td>
+              <td class="padding-right">Permanent Address</td>
               <td>
                 <textarea
                   name="permanent-address"
@@ -137,7 +146,7 @@
               </td>
             </tr>
             <tr>
-              <td>Gender</td>
+              <td class="padding-right">Gender</td>
               <td>
                 <input type="radio" name="gender" id="Male" value="M" />
                 <label for="Male">Male</label>
@@ -146,29 +155,31 @@
               </td>
             </tr>
             <tr>
-              <td>Bank Transaction ID</td>
+              <td class="padding-right">Bank Transaction ID</td>
               <td>
                 <input
                   type="text"
                   name="transactionId"
                   id=""
                   placeholder="Transaction Number"
+                  required
                 />
               </td>
             </tr>
             <tr>
-              <td>Amount</td>
+              <td class="padding-right">Amount</td>
               <td>
                 <input
                   type="number"
                   name="fee"
                   id=""
                   placeholder="Admission Fee"
+                  required
                 />
               </td>
             </tr>
             <tr>
-              <td>Bkash Sender Mobile</td>
+              <td class="padding-right">Bkash Sender Mobile</td>
               <td>
                 <input
                   type="tel"
@@ -181,9 +192,9 @@
               </td>
             </tr>
             <tr>
-              <td>Upload Your Full Face Photo</td>
+              <td class="padding-right">Upload Your Full Face Photo</td>
               <td>
-                <input type="file" name="photo" id="" />
+                <input type="file" name="photo" id="" required />
                 <span style="color: red; font-weight: bolder"
                   >Photo Name As Your NID Number</span
                 >
@@ -193,10 +204,14 @@
         </div>
 
         <div class="education-info">
-          <table style="border: 2px solid black">
+          <table class="table-border w-100">
             <tr>
               <td>
-                <table cellspacing="5" style="border: 1px solid black">
+                <table
+                  cellspacing="8"
+                  class="w-100"
+                  style="border: 1px solid black"
+                >
                   <tr>
                     <th>Name Of The Degree</th>
                     <th>Board/ University</th>
@@ -277,9 +292,15 @@
                       <input type="number" name="duration" id="" />
                     </td>
                   </tr>
-                  <tr id="info">
-                    <td colspan="6" style="border: 1px solid black">
-                      <ul>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="table-border w-100 bg-warning">
+                  <tr>
+                    <td>
+                      <ul class="padding-all">
                         <li>
                           The applicant's application fees is <b>1000/=</b> (One
                           Thousand Taka Only)
@@ -299,7 +320,7 @@
           </table>
         </div>
 
-        <div class="form-submit">
+        <div class="form-submit align-center padding-all">
           <table>
             <tr>
               <td>
@@ -307,8 +328,9 @@
                   type="Submit"
                   name="save"
                   value="Submit"
-                />&nbsp;&nbsp;&nbsp;
-                <input type="reset" value="Reset" />
+                  class="btn"
+                />&nbsp;&nbsp;
+                <input type="reset" value="Reset" class="btn" />
               </td>
             </tr>
           </table>
