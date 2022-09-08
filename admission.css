@@ -1,41 +1,41 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.bg-info{
-    background-color: #76b5c5;
+.bg-info {
+  background-color: #76b5c5;
 }
-.bg-warning{
-    background-color: #cce794;
+.bg-warning {
+  background-color: #cce794;
 }
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
-.lh-1{
-    line-height: 1.5em;
+.lh-1 {
+  line-height: 1.5em;
 }
-.text-danger{
-    color: red;
+.text-danger {
+  color: red;
 }
- .padding-all{
-    padding: 20px 30px;
- }
-.align-center{
-display: flex;
-justify-content: center;
+.padding-all {
+  padding: 20px 30px;
 }
-.padding-right{
-    padding-right: 2em;
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+.padding-right {
+  padding-right: 2em;
 }
 .table-border {
-    border: 2px solid black;
+  border: 2px solid black;
 }
-.payment-info input[type=text]{
-    width: 60%;
+.payment-info input[type="text"] {
+  width: 60%;
 }
-.w-100{
-    width: 100%;
+.w-100 {
+  width: 100%;
 }
-.btn{
-    padding: 5px 10px;
+.btn {
+  padding: 5px 10px;
 }
